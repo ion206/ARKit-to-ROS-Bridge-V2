@@ -9,9 +9,8 @@ If you are working on the ROS 2 side and don't want to download the whole iOS Xc
 
 **1. Pull the package into your workspace:**
 ```bash
-cd ~/ros2_ws/src
-git clone --no-checkout [https://github.com/ion206/iOS-ARKit-to-ROS2.git](https://github.com/ion206/iOS-ARKit-to-ROS2.git)
-cd iOS-ARKit-to-ROS2
-git sparse-checkout init --cone
+cd PATH_TO_YOUR_WORKSPACE/src
+git clone --filter=blob:none --sparse https://github.com/ion206/ARKit-to-ROS-Bridge-V2.git arkit_ros_bridge
+cd arkit_ros_bridge
 git sparse-checkout set arkit_ros_bridge
-git checkout main
+git checkout main  # or your the current branch you want
