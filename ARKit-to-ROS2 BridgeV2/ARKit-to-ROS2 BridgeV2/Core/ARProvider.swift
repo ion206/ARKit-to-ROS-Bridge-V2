@@ -23,7 +23,7 @@ class ARProvider: NSObject, ARSessionDelegate, ObservableObject {
 	func start() {
 		let configuration = ARWorldTrackingConfiguration()
 		
-		// 🚀 STRIP THE FAT: Turn off everything RTAB-Map doesn't need
+		// STRIP THE FAT: Turn off everything RTAB-Map doesn't need
 		configuration.planeDetection = []
 		configuration.environmentTexturing = .none
 		configuration.isLightEstimationEnabled = false

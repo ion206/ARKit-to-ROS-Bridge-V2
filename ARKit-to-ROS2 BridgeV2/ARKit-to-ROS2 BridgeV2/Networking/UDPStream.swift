@@ -52,7 +52,7 @@ class UDPStream: ObservableObject {
 			let offset = Int(chunkIndex) * mtuSize
 			let length = min(mtuSize, data.count - offset)
 			let chunkData = data.subdata(in: offset..<(offset + length))
-			print("📲 Sending Chunk: \(chunkData.count) bytes for Topic \(topicID)")
+			print("Sending Chunk: \(chunkData.count) bytes for Topic \(topicID)")
 			
 			var header = Data()
 			var tID = topicID
